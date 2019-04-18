@@ -1,0 +1,8 @@
+
+
+AutoFormat = ctrl + shift + i
+
+usefull extenstions 
+        :Material icon theme
+        :node.js modules intellisense
+        :npm intellisense

@@ -1,0 +1,5 @@
+
+
+USE let & const instead of var
+USE arrow functions instead of normal ones 
+USE import * as fs from 'fs'  instead of const fs= require('fs') //not supported yet 

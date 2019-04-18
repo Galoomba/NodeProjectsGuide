@@ -1,0 +1,10 @@
+
+** To make the debuger to use nodemon there are some steps **
+    1-on server.js click debuger->start debuger
+    2-debug -> open config 
+    3- in launch.json add
+        * "restart": true,
+        * "runtimeExecutable": "nodemon",
+        * "console": "integratedTerminal"
+    4- install nodemon goloble -g 
+        

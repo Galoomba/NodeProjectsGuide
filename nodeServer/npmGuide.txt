@@ -1,0 +1,21 @@
+
+
+-- npm init to intialize a node project folder "package.json"
+
+** in package.json
+    -- to make an entry point script 'start'
+        "start": " node server.js" in scripts
+        ==>run "npm start"
+    --to make a custom key script
+        "whatever": "do smth" in scripts
+        ==>run "npm run whatever"
+
+** install package by npm 
+    -- npm install [packageName]
+        --save-dev <== only during development
+        --save <== during production
+        -g <== globle in ur machine "to use in multiple projects"
+        ** run npm install to update all packages**
+
+** Usefull package
+    --nodemon <== to restart the server whenever a change happend 'install on div mode'

@@ -1,0 +1,13 @@
+ ** install nvm**
+ https://www.liquidweb.com/kb/how-to-install-nvm-node-version-manager-for-node-js-on-centos-7/
+ 
+ **update node**
+ nvm install node --reinstall-packages-from=node
+ nvm ls [to check versions] 
+ nvm alias default [version]
+
+**update npm**
+nvm install --latest-npm
+
+**uninstall old node/**
+nvm uninstall [nodeVersion]

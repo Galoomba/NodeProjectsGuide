@@ -1,0 +1,13 @@
+
+http://expressjs.com/en/4x/api.html
+
+**To install exxpress
+    npm install --save express
+
+**TO install a body parser
+    npm install --save body-parser
+
+**TO install ejs 
+    npm install --save ejs
+    app.set('view engine', 'ejs');
+    app.set('views', 'views');
