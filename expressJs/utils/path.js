@@ -20,6 +20,11 @@ module.exports.viewsDir=path.join(rootDir,'views')
 module.exports.publicDir=path.join(rootDir,'public')
 
 /**
+ * return the data dir url 
+ */
+module.exports.dataDir=path.join(rootDir,'data')
+
+/**
  * Concat the the path of the desired dir  
  * using the Path join.apply() 
  * NOTE:no need to require the path anymore in other files

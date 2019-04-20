@@ -17,6 +17,10 @@ const {viewsDir,publicDir,pathJoin}=require('./utils/path')
 const adminRouter=require("./routes/admin")
 const shopRouter=require('./routes/shop')
 
+//controller
+const {error404}=require('./controllers/errorController')
+
+
 //express return a function 
 const app =express();
 
@@ -36,9 +40,7 @@ app.use("/admin/",adminRouter)
 app.use('/shop/',shopRouter)
 
 //handle 404 page not found logic
-app.use((req,res,next)=>{
-    res.status(404).sendFile(pathJoin(viewsDir,'404.html'))
-})
+app.use(error404)
 
 //** we can use the app.listen function to init a server instead of making it the old way
 //** we can also remove the http import in that case */
