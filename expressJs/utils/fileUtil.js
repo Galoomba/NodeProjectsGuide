@@ -1,7 +1,7 @@
 //Read and write to files util 
 
 const fs = require('fs')
-const { dataDir, pathJoin } = require('./path')
+const { dataDir, pathJoin } = require('./pathUtil')
 const Product = require('../models/product')
 
 const filePath = pathJoin(dataDir, "products.json")

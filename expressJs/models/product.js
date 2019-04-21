@@ -1,7 +1,7 @@
 //Here we use product model & no longer work with utils/dummyDB file 
 
 // work with an array as a db FLAG : TEMP
-const productsUtil  = require('../utils/read&write-ToFiles-util') 
+const productsUtil  = require('../utils/fileUtil') 
 
 module.exports = class  {
 

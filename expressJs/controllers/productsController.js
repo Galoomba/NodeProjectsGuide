@@ -32,7 +32,7 @@ module.exports.postAddProduct = (req, res, next) => {
     console.log(req.body)
     const message = req.body.title
     //save the product 
-    let product = new Product(message)
+    const product = new Product(message)
     product.save()
 
     res.redirect('/shop/')

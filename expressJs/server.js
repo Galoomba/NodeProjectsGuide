@@ -10,7 +10,7 @@ const express=require('express')
 //import the body parser
 const bodyParser=require('body-parser')
 
-const {viewsDir,publicDir,pathJoin}=require('./utils/path')
+const {publicDir}=require('./utils/pathUtil')
 
 
 //import our routers
