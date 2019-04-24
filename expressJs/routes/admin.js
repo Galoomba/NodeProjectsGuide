@@ -2,7 +2,7 @@ const express=require('express')
 const router=express.Router()
 
 //controller
-const productController=require('../controllers/productsController')
+const adminController=require('../controllers/adminController')
 
 
 
@@ -12,9 +12,21 @@ const productController=require('../controllers/productsController')
 //NOTE : if you resend a response it's legit to not excute the next fuction
 
 //well reach poth throw /admin/add-product =>GET
-router.get('/add-product',productController.getAddProducts)
+router.get('/add-product',adminController.getAddProducts)
 
 //well reach poth throw /admin/add-product =>POST
-router.post('/add-product',productController.postAddProduct)
+router.post('/add-product',adminController.postAddProduct)
+
+//admin/edit-product =>GET
+router.get('/edit-product/:productId',adminController.getEditProduct)
+
+//admin/edit-product =>POST
+router.post('/edit-product/',adminController.postEditProduct)
+
+//admin/delete-product
+router.post('/delete-product',adminController.postDeleteProduct)
+
+//admin/products =>GET
+router.get('/products',adminController.getProducts)
 
 module.exports=router

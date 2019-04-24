@@ -1,15 +1,27 @@
 //Here we use product model & no longer work with utils/dummyDB file 
 
 // work with an array as a db FLAG : TEMP
-const productsUtil  = require('../utils/fileUtil') 
+const productsUtil = require('../utils/fileUtil')
 
-module.exports = class  {
+module.exports = class Product {
 
-    constructor(title) {
+    /**
+     * Product constructor
+     * @param {string} title 
+     * @param {string} imageUrl 
+     * @param {string} description 
+     * @param {number} price 
+     */
+    constructor(title, imageUrl, description, price) {
+        this.id = Math.random().toString()
         this.title = title
+        this.imageUrl = imageUrl
+        this.description = description
+        this.price = price
+
     }
 
-   
+
     /**
      * Save the current object
      */
@@ -23,23 +35,44 @@ module.exports = class  {
      * Save a new product object
      * @param product product to add 
      */
-    addProduct(product) {
+    static addProduct(product) {
         //products.push(product)
 
         //work with files
-        productsUtil.writeProductToFile(this)
+        productsUtil.writeProductToFile(product)
     }
 
     /**
-     * Add product to the products array
-     * @param {string} product 
+     * update product object
+     * @param productId
+     * @param newProduct product to add 
      */
-    addProductName(title) {
-        //products.push({ title: title })
-
+    static updateProduct(productId,newProduct) {
+    
         //work with files
-        productsUtil.writeProductToFile({ title: title })
+        productsUtil.updateProductToFile(productId,newProduct)
     }
+
+     /**
+     * Delete product object
+     * @param productId
+     */
+    static deleteProduct(productId) {
+    
+        //work with files
+        productsUtil.deleteProductFromFile(productId)
+    }
+
+    /**
+     * getProductByID
+     * @param {string} productId   
+     * @param {Product} callback contain the product 
+     * @returns {Product}
+     */
+    static getProductByID(productId, callback) {
+        productsUtil.getProductByID(productId, callback)
+    }
+
 
     /**
      * Return all the products

@@ -12,6 +12,9 @@ const bodyParser=require('body-parser')
 
 const {publicDir}=require('./utils/pathUtil')
 
+const shopController=require('./controllers/shopController')
+
+
 
 //import our routers
 const adminRouter=require("./routes/admin")
@@ -37,6 +40,8 @@ app.use(express.static(publicDir))
 //use the routing files 
 //fiter the admin routes 
 app.use("/admin/",adminRouter)
+
+app.get('/',shopController.getIndex)
 app.use('/shop/',shopRouter)
 
 //handle 404 page not found logic
