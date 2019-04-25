@@ -1,0 +1,32 @@
+https://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/#repo-qg-yum-installing
+
+//NOTE mysql installation
+On linux *Fedora *
+    1- download the yum repo file and excute it 
+         sudo rpm -Uvh mysql80-community-release-el6-n.noarch.rpm
+    
+    2-install mysql server
+        sudo yum install mysql-community-server
+    
+    3- start the server
+        sudo service mysqld start
+
+    4- check server state
+        sudo service mysqld status
+
+    5- get the server password 
+        sudo grep 'temporary password' /var/log/mysqld.log
+
+    6- change server password 
+        mysql -uroot -p
+        ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+
+    7- upgarding mysql
+        sudo dnf --refresh upgrade mysql-server
+
+    8- installing mysqlWorkBranch 
+        sudo dnf install mysql-workbench-community
+
+    //NOTE sql node dependance
+    9- node dependance
+        npm install --save mysql2
