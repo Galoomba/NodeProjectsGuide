@@ -30,3 +30,7 @@ On linux *Fedora *
     //NOTE sql node dependance
     9- node dependance
         npm install --save mysql2
+
+    //NOTE Sequelize dependance for easier sql 
+    10- Sequelize dependance MUST INSTALL mysql2
+        npm install --save sequelize
