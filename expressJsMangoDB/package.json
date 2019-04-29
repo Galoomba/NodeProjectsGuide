@@ -1,0 +1,25 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "/home/starhood/.nvm/versions/node/v11.14.0/bin/nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "mangodb": "^1.0.0",
+    "express": "^4.16.4"
+   
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/products.json",
+      "data/cart.json"
+    ]
+  }
+}

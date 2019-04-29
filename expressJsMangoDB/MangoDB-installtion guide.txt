@@ -1,0 +1,13 @@
+//NOTE INSTALL mangoDb
+docs
+ https://docs.mongodb.com/manual/crud/
+ https://docs.mongodb.com/guides/
+
+1- open the mango db website and make an new account for the mangoDb atlas 
+2- create a claster 
+3- make account with read and wirte perrmissions
+4- whitelist the machine ip
+5- connect to ur app and copy the connection string 
+
+6- install mangoDb driver
+    npm install --save mongodb
