@@ -149,9 +149,9 @@ module.exports.getProductDetails = (req, res, next) => {
                 formsCSS: true,
                 productCSS: true,
                 activeAddProduct: true
-            })
-        })
-}
+            });
+        });
+};
 
 /**
  * Checkout  Page

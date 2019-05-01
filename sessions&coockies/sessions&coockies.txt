@@ -1,0 +1,16 @@
+-- To set a cookie 
+    res.setHeader('Set-Cookie','logedIn=true')
+-- To get a cookie
+    const isLogedIn= req.get('Cookie').split('=')[1] === 'true'
+
+**Sessions**
+    *Install the Sessions package 
+        https://www.npmjs.com/package/express-session
+        -npm install --save express-session
+
+    //NOTE 
+    ** By default Sessions are storied in memory 'ram' and that is not write 
+    we need to save it into a database 
+        https://www.npmjs.com/package/connect-mongo
+        https://www.npmjs.com/package/connect-mongodb-session << special for sessions
+        -npm i --save connect-mongodb-session

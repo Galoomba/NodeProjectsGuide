@@ -1,0 +1,6 @@
+Docs
+    https://mongoosejs.com/
+    https://mongoosejs.com/docs/guide.html
+
+    Dependance 
+    npm install --save mongoose
