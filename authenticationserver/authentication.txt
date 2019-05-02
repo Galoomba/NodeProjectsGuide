@@ -1,0 +1,18 @@
+** Authentication flow 
+    -Sginup glow
+      1- search if user aready exist 
+      2- if yes redirect 
+      3- if no make a new user with the enterd data and save it 
+
+
+    --Password encyption 
+        npm install --save bcryptjs
+
+
+    --CSRF attack 
+        csrf token valdit that all post request are from our views not any others  
+        npm install --save csurf
+
+    --flash data 
+        insert a flash date in session to be triggerd, it will be removed once it's used 
+        npm install --save connect-flash 
