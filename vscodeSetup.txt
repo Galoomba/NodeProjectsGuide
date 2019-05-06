@@ -1,0 +1,38 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 0,
+    "todo-tree.tags": [
+        "TODO",
+        "FIXME",
+        "NOTE",
+        "ALTER"
+      ],
+    "todo-tree.customHighlight": {
+        "TODO": {
+            "type": "line",
+            "foreground": "yellow",
+            "iconColour": "green"
+        },
+        "FIXME": {
+            "type": "line",
+            "foreground": "white",
+            "iconColour": "red"
+        },
+        "NOTE":{
+            "type": "line",
+            "foreground": "magenta",
+            "iconColour": "blue"
+        },
+        "ALTER":{
+            "type": "line",
+            "foreground": "#DAA520",
+            "iconColour": "cyan"
+        }
+    },
+    "npm-intellisense.importES6": false,
+    "npm-intellisense.packageSubfoldersIntellisense": true,
+    "npm-intellisense.showBuildInLibs": true
+
+}

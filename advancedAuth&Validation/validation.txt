@@ -1,0 +1,15 @@
+validation package to validate user input 
+    **https://express-validator.github.io/docs/
+        https://github.com/chriso/validator.js
+        npm install --save express-validator
+
+
+    ** useful issues
+    https://stackoverflow.com/questions/46011563/access-request-body-in-check-function-of-express-validator-v4/46013025#46013025
+    https://github.com/express-validator/express-validator/issues/503
+
+
+
+    ** error handling using custom ()
+        -if task is sync >> throw new Error('error message')
+        -if task is async >> throw Promise.reject('error message')

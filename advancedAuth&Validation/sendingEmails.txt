@@ -1,0 +1,6 @@
+We will use sendGrid for this trial 
+    1- make an account on sendGrid
+    https://sendgrid.com/
+    **Dependacies 
+    -npm install --save sendgrid
+        https://www.npmjs.com/package/sendgrid
